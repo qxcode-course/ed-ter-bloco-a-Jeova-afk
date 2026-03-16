@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-15_13-57-09",
+            "content": "@@ -109,16 +109,18 @@\n fmt.Scan\n+ln\n (&nome)%0A\n@@ -128,16 +128,18 @@\n fmt.Scan\n+ln\n (&idade)\n@@ -432,9 +432,8 @@\n ao)%0A%0A%0A%7D%0A\n-%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-15_14-03-04",
+            "content": "@@ -390,22 +390,30 @@\n rint\n-(nome + %22eh%22 +\n+ln(%22%25s eh %25s%5Cn%22, nome,\n  cla\n@@ -422,17 +422,15 @@\n ificacao\n-%5Cn\n )%0A%0A%0A%7D%0A%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-15_14-10-35",
+            "content": "@@ -390,21 +390,22 @@\n rint\n-l\n (nome\n-,\n+ +\n  %22eh%22\n-,\n+ +\n  cla\n@@ -414,15 +414,17 @@\n ificacao\n+%5Cn\n )%0A%0A%0A%7D%0A%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-15_14-13-04",
+            "content": "@@ -387,17 +387,16 @@\n t.Printl\n-n\n (nome, %22\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-15_14-13-29",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    \n\tvar nome string\n\tvar idade int \n\n\tvar  classificacao string\n\n\tfmt.Scan(&nome)\n\tfmt.Scan(&idade)\n\t\n\n\tif idade < 12 {\n\t\tclassificacao = \"crianca\"\n\t} else if idade < 18 {\n\t\tclassificacao = \"jovem\"\n\t} else if idade < 65 {\n\t\tclassificacao = \"adulto\"\n\t} else if idade < 1000 {\n\t\tclassificacao = \"idoso\"\n\t} else {\n\t\tclassificacao = \"mumia\"\n\t}\n\n\tfmt.Println(nome, \"eh\", classificacao)\n\n\n}\n\n",
+            "lines": "30"
+        }
+    ]
+}
