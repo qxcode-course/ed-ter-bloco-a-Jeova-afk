@@ -20,6 +20,7 @@ expanded:
 tasks:
   ed@pintando: '{rate:100}'
   ed@pedra: '{rate:100}'
+  ed@casais: '{rate:100}'
   ed@baruel: '{rate:100}'
   ed@gomos: '{rate:100}'
 flags:
@@ -30,4 +31,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@gomos
+selected: ed@casais
