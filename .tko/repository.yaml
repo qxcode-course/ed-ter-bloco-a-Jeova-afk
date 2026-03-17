@@ -14,12 +14,15 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@main-quest
-- ed@side-quests
 - ed@revisão
+- ed@main-quest
+- ed@recursão-extra
+- ed@side-quests
+- ed@análise
 tasks:
   ed@pintando: '{rate:100}'
   ed@mumia: '{rate:100}'
+  ed@fuga: '{rate:100}'
   ed@pedra: '{rate:100}'
   ed@casais: '{rate:100}'
   ed@baruel: '{rate:100}'
