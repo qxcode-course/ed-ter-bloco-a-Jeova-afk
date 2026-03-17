@@ -1,4 +1,4 @@
-# Figurinhas repetidas
+ ee# Figurinhas repetidas
 
 ![_](../../.tko/cache/ed/base/baruel/cover.jpg)
 

@@ -17,3 +17,5 @@
 2026-03-16 23:14:30, EXEC, v:1, k:ed@baruel, mode:FULL, rate:50, size:66
 2026-03-16 23:37:19, EXEC, v:1, k:ed@baruel, mode:FULL, rate:100, size:62
 2026-03-16 23:37:44, MOVE, v:1, k:ed@baruel, mode:BACK
+2026-03-16 23:50:15, MOVE, v:1, k:ed@gomos, mode:DOWN
+2026-03-16 23:50:18, MOVE, v:1, k:ed@gomos, mode:PICK

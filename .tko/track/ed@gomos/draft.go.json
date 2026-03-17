@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_00-13-28",
+            "content": "@@ -512,17 +512,17 @@\n i%5D = old\n-y\n+ \n %0A%0A      \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-17_00-14-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var q int \n    var d string\n\n    fmt.Scan(&q, &d)\n\n    x := make([]int, q)\n    y := make([]int, q)\n\n    for i := 0; i < q; i++ {\n        fmt.Scan(&x[i], &y[i])\n    }\n\n    oldx := x[0]\n    oldy := y[0]\n\n    if d == \"L\" {\n        x[0]--\n    } else if d == \"R\" {\n        x[0]++\n    } else if d == \"U\" {\n        y[0]--\n    } else if d == \"D\" {\n        y[0]++\n    }\n\n    for i := 1; i < q; i++ {\n        tempX := x[i]\n        tempY := y[i]\n\n        x[i] = oldx\n        y[i] = oldy\n\n        oldx = tempX\n        oldy = tempY\n    }\n\n    for i := 0; i < q; i++ {\n        fmt.Println(x[i], y[i])\n    }\n    \n}\n",
+            "lines": "45"
+        }
+    ]
+}
