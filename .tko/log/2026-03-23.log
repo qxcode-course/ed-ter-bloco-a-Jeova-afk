@@ -1,0 +1,5 @@
+2026-03-23 00:20:52, EXEC, v:1, k:ed@apagando, mode:FULL, size:35, fail:COMP
+2026-03-23 00:21:22, EXEC, v:1, k:ed@apagando, mode:FULL, size:35, fail:COMP
+2026-03-23 00:22:49, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:35
+2026-03-23 00:26:05, EXEC, v:1, k:ed@apagando, mode:FULL, rate:100, size:37
+2026-03-23 00:26:15, MOVE, v:1, k:ed@apagando, mode:BACK
