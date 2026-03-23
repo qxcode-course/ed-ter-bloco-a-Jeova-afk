@@ -1,0 +1,11 @@
+2026-03-23 00:20:52, EXEC, v:1, k:ed@apagando, mode:FULL, size:35, fail:COMP
+2026-03-23 00:21:22, EXEC, v:1, k:ed@apagando, mode:FULL, size:35, fail:COMP
+2026-03-23 00:22:49, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:35
+2026-03-23 00:26:05, EXEC, v:1, k:ed@apagando, mode:FULL, rate:100, size:37
+2026-03-23 00:26:15, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-03-23 00:27:44, SELF, v:1, k:ed@apagando, self:1, rate:100, refactor:1
+2026-03-23 16:30:43, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-03-23 16:42:01, EXEC, v:1, k:ed@apagando, mode:FULL, size:29, fail:COMP
+2026-03-23 16:42:21, EXEC, v:1, k:ed@apagando, mode:FULL, fail:COMP
+2026-03-23 16:42:32, EXEC, v:1, k:ed@apagando, mode:FULL, rate:100, size:29
+2026-03-23 16:48:30, MOVE, v:1, k:ed@apagando, mode:BACK
