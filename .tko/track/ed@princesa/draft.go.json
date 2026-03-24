@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_21-47-39",
+            "content": "@@ -180,17 +180,18 @@\n ntes := \n-N\n+n \n %0A    ind\n@@ -298,32 +298,33 @@\n     prox = (prox\n+x\n  + 1) %25 N %0A     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-23_21-48-12",
+            "content": "@@ -66,17 +66,17 @@\n t.Scan(&\n-N\n+n\n , &E)%0A%0A \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-23_21-48-25",
+            "content": "@@ -591,17 +591,16 @@\n mt.Print\n-f\n (%22%3E%25d %22,\n@@ -651,17 +651,16 @@\n mt.Print\n-f\n (%22%25d %22, \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-23_21-48-46",
+            "content": "@@ -478,24 +478,30 @@\n  N%0A        %7D\n+%0A    %7D\n %0A%0A    for i \n@@ -697,20 +697,16 @@\n %0A    %7D%0A%0A\n-    \n     fmt.\n@@ -719,20 +719,6 @@\n n()%0A\n-        %0A    %7D\n %0A%7D\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-23_21-55-26",
+            "content": "@@ -591,24 +591,25 @@\n ntf(%22%3E%25d\n+ \n %22, i+1)%0A\n         \n@@ -592,32 +592,32 @@\n tf(%22%3E%25d %22, i+1)%0A\n-\n             %7D el\n@@ -651,16 +651,17 @@\n intf(%22%25d\n+ \n %22, i+1)%0A\n@@ -713,16 +713,24 @@\n intln()%0A\n+        \n %0A    %7D%0A%7D\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-23_21-56-58",
+            "content": "@@ -488,30 +488,8 @@\n  %7D%0A%0A\n-    primeiro := true %0A\n     \n@@ -538,80 +538,8 @@\n %5D %7B%0A\n-            if !primeiro %7B%0A                fmt.Print(%22 %22)%0A            %7D%0A\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-23_21-59-54",
+            "content": "@@ -33,16 +33,17 @@\n ain() %7B%0A\n+%0A\n     var \n@@ -50,16 +50,17 @@\n N, E int\n+ \n %0A    fmt\n@@ -102,16 +102,17 @@\n ool, N)%0A\n+%0A\n     for \n@@ -115,33 +115,33 @@\n for i := 0; i %3C \n-n\n+N\n ; i++ %7B%0A        \n@@ -181,17 +181,16 @@\n tes := N\n- \n %0A    ind\n@@ -314,16 +314,29 @@\n + 1) %25 N\n+ %0A        %7D  \n %0A       \n@@ -328,34 +328,32 @@\n     %7D  %0A        \n-%7D%0A\n %0A        vivo%5Bpr\n@@ -464,33 +464,32 @@\n  = (ind + 1) %25 N\n- \n %0A        %7D%0A%0A    \n@@ -480,28 +480,24 @@\n %0A        %7D%0A%0A\n-    \n     primeiro\n@@ -506,28 +506,24 @@\n = true %0A    \n- \n-   \n for i := 0; \n@@ -526,17 +526,17 @@\n  0; i %3C \n-n\n+N\n ; i++ %7B%0A\n@@ -543,20 +543,16 @@\n         \n- \n-   \n if vivo%5B\n@@ -572,17 +572,12 @@\n     \n-   \n- \n if !\n-=\n prim\n@@ -583,20 +583,16 @@\n meiro %7B%0A\n-    \n         \n@@ -622,35 +622,26 @@\n             \n-    %7D%0A%0A    \n+%7D%0A\n             \n@@ -662,36 +662,32 @@\n                 \n-   \n- \n fmt.Printf(%22%3E%25d%22\n@@ -705,20 +705,16 @@\n         \n-    \n %7D else %7B\n@@ -722,36 +722,32 @@\n                 \n- \n-   \n fmt.Printf(%22%25d%22,\n@@ -768,53 +768,10 @@\n     \n-  \n-  %7D%0A%0A                primeiro = false %0A    \n+%7D%0A\n     \n@@ -776,28 +776,24 @@\n       %7D%0A    \n- \n-   \n %7D%0A%0A        f\n@@ -793,16 +793,17 @@\n       fm\n+t\n .Println\n@@ -805,15 +805,16 @@\n intln()%0A\n+%0A\n     %7D%0A%7D\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-23_22-09-41",
+            "content": "@@ -120,17 +120,17 @@\n  0; i %3C \n-N\n+n\n ; i++ %7B%0A\n@@ -576,16 +576,17 @@\n     if !\n+=\n primeiro\n@@ -866,25 +866,24 @@\n %0A%0A        fm\n-t\n .Println()%0A \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-23_22-11-08",
+            "content": "@@ -514,33 +514,33 @@\n for i := 0; i %3C \n-N\n+n\n ; i++ %7B%0A        \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-23_22-11-25",
+            "content": "@@ -476,32 +476,8 @@\n  %7D%0A%0A\n-        fmt.Print(%22%5B %22)%0A\n     \n@@ -883,12 +883,8 @@\n tln(\n-%22 %5D%22\n )%0A  \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-23_22-13-46",
+            "content": "@@ -731,11 +731,11 @@\n tf(%22\n+%3E\n %25d\n-%3E\n %22, i\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-03-23_22-26-25",
+            "content": "@@ -226,27 +226,8 @@\n 1 %7B%0A\n-        count := 0%0A\n     \n@@ -242,61 +242,12 @@\n  := \n- \n+(\n ind\n-%0A        for count %3C 1 %7B%0A            prox = (prox\n  + 1\n@@ -257,31 +257,29 @@\n  N %0A        \n-    if \n+for !\n vivo%5Bprox%5D %7B\n@@ -295,33 +295,29 @@\n     \n-    count++%0A            %7D\n+prox = (prox + 1) %25 N\n %0A   \n@@ -385,14 +385,12 @@\n     \n-next :\n+ind \n = (p\n@@ -421,20 +421,19 @@\n r !vivo%5B\n-next\n+ind\n %5D %7B%0A    \n@@ -444,20 +444,18 @@\n     \n-next = (next\n+ind = (ind\n  + 1\n@@ -451,32 +451,33 @@\n  = (ind + 1) %25 N\n+ \n %0A        %7D%0A%0A    \n@@ -689,20 +689,19 @@\n if i == \n-next\n+ind\n  %7B%0A     \n@@ -913,28 +913,8 @@\n %5D%22)%0A\n-        ind = next%0A%0A\n     \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-03-23_22-33-01",
+            "content": "@@ -33,20 +33,16 @@\n ain() %7B%0A\n-    \n     var \n@@ -50,28 +50,24 @@\n , E int%0A    \n-   \n- \n fmt.Scan(&N,\n@@ -72,20 +72,16 @@\n N, &E)%0A%0A\n-    \n     vivo\n@@ -100,28 +100,24 @@\n ool, N)%0A    \n- \n-   \n for i := 0; \n@@ -121,36 +121,32 @@\n 0; i %3C N; i++ %7B%0A\n-    \n         vivo%5Bi%5D \n@@ -149,28 +149,24 @@\n %5Bi%5D = true %0A\n-    \n     %7D%0A%0A     \n@@ -160,28 +160,24 @@\n %0A    %7D%0A%0A    \n-  \n-  \n restantes :=\n@@ -180,28 +180,24 @@\n s := N %0A    \n-  \n-  \n ind := E - 1\n@@ -198,28 +198,24 @@\n  E - 1%0A%0A    \n- \n-   \n for restante\n@@ -226,513 +226,8 @@\n 1 %7B%0A\n-            fmt.Print(%22%5B %22)%0A            primeiro := true %0A            for i := 0; i %3C N; i++ %7B%0A                if vivo%5Bi%5D %7B%0A                    if !primeiro %7B%0A                        fmt.Print(%22 %22)%0A                    %7D%0A%0A                    if i == ind %7B%0A                        fmt.Printf(%22%25d%3E%22, i+1)%0A                    %7D else %7B%0A                        fmt.Printf(%22%25d%22, i+1)%0A                    %7D%0A                    primeiro = false %0A                %7D%0A            %7D%0A%0A            fmt.Println(%22 %5D%22)%0A%0A    \n     \n@@ -253,42 +253,21 @@\n     \n-    \n prox :=\n+ \n  ind\n- %0A            %0A    \n+%0A\n     \n@@ -294,28 +294,24 @@\n             \n-   \n- \n prox = (prox\n@@ -313,36 +313,32 @@\n (prox + 1) %25 N %0A\n-    \n             if v\n@@ -369,20 +369,16 @@\n     \n-    \n count++%0A\n     \n@@ -373,20 +373,16 @@\n count++%0A\n-    \n         \n@@ -391,35 +391,27 @@\n   %7D%0A        \n-    %7D%0A%0A    \n+%7D%0A%0A\n         vivo\n@@ -434,20 +434,16 @@\n         \n-    \n restante\n@@ -455,24 +455,22 @@\n         \n- \n-   ind \n+next :\n = (prox \n@@ -471,36 +471,32 @@\n (prox + 1) %25 N %0A\n-    \n         for !viv\n@@ -497,19 +497,20 @@\n r !vivo%5B\n-ind\n+next\n %5D %7B%0A    \n@@ -521,47 +521,29 @@\n     \n-    ind = (ind + 1) %25 N %0A%0A            %7D\n+next = (next + 1) %25 N\n %0A   \n@@ -651,16 +651,17 @@\n   if viv\n+o\n %5Bi%5D %7B%0A  \n@@ -678,73 +678,241 @@\n     \n-fmt.Print(%22 %22)%0A            %7D%0A%0A            fmt.Printf(%22%25d%3E%22, i+1)%0A\n+if !primeiro %7B%0A                    fmt.Print(%22 %22)%0A                %7D%0A%0A                if i == next %7B%0A                    fmt.Printf(%22%25d%3E%22, i+1)%0A                %7D else %7B%0A                    fmt.Printf(%22%25d%22, i+1)%0A                %7D%0A%0A    \n     \n@@ -929,32 +929,46 @@\n imeiro = false %0A\n+            %7D%0A\n         %7D%0A%0A     \n@@ -988,13 +988,35 @@\n n(%22 %5D%22)%0A    \n+    ind = next%0A%0A    %7D%0A\n %7D\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-03-23_22-57-47",
+            "content": "@@ -1256,33 +1256,32 @@\n           if viv\n-o\n %5Bi%5D %7B%0A          \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-03-23_22-58-09",
+            "content": "@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%0A\n+    \n     var \n@@ -53,18 +53,21 @@\n N, E int\n- \n %0A\n+    \n     fmt.\n@@ -80,24 +80,28 @@\n N, &E)%0A%0A    \n+  \n+  \n vivo := make\n@@ -112,16 +112,20 @@\n ool, N)%0A\n+    \n     for \n@@ -149,24 +149,28 @@\n + %7B%0A        \n+    \n vivo%5Bi%5D = tr\n@@ -173,27 +173,35 @@\n = true %0A    \n+  \n+  \n %7D%0A%0A\n+    \n     restante\n@@ -204,24 +204,28 @@\n antes := N %0A\n+    \n     ind := E\n@@ -229,20 +229,25 @@\n = E - 1%0A\n+%0A \n     \n+   \n for rest\n@@ -258,32 +258,36 @@\n s %3E 1 %7B%0A        \n+   \n+ \n fmt.Print(%22%5B %22)%0A\n@@ -282,24 +282,28 @@\n Print(%22%5B %22)%0A\n+    \n         prim\n@@ -324,20 +324,26 @@\n         \n+ \n+   \n for \n+i \n := 0; i \n@@ -357,32 +357,36 @@\n + %7B%0A            \n+    \n if vivo%5Bi%5D %7B%0A   \n@@ -398,16 +398,20 @@\n         \n+   \n+ \n if !prim\n@@ -417,16 +417,20 @@\n meiro %7B%0A\n+    \n         \n@@ -464,35 +464,42 @@\n                 \n-%7D%0A%0A\n+    %7D%0A%0A   \n                 \n@@ -498,16 +498,17 @@\n         \n+ \n if i == \n@@ -513,16 +513,20 @@\n = ind %7B%0A\n+    \n         \n@@ -576,16 +576,20 @@\n         \n+    \n %7D else %7B\n@@ -601,32 +601,36 @@\n                 \n+   \n+ \n fmt.Printf(%22%25d%22,\n@@ -643,35 +643,42 @@\n                 \n-%7D%0A%0A\n+    %7D%0A    \n                 \n@@ -703,34 +703,41 @@\n             \n+ \n-%7D%0A\n+   %7D%0A   \n         \n %7D%0A%0A        f\n@@ -716,35 +716,40 @@\n    %7D%0A           \n+ \n %7D%0A%0A\n+    \n         fmt.Prin\n@@ -771,34 +771,93 @@\n     \n-prox := ind%0A        for %7B%0A\n+    count := 0%0A            prox := ind %0A            %0A            for count %3C 1 %7B%0A    \n     \n@@ -891,32 +891,36 @@\n  N %0A            \n+  \n+  \n if vivo%5Bprox%5D %7B%0A\n@@ -927,38 +927,48 @@\n                 \n-break%0A\n+    count++%0A    \n             %7D%0A  \n@@ -965,35 +965,43 @@\n       %7D%0A        \n+ \n-%7D%0A%0A\n+   %7D%0A%0A    \n         vivo%5Bpro\n@@ -1012,32 +1012,36 @@\n  false %0A        \n+    \n restantes--%0A%0A   \n@@ -1041,41 +1041,8 @@\n --%0A%0A\n-        ind = prox%0A        for %7B%0A\n     \n@@ -1056,19 +1056,20 @@\n  ind = (\n-ind\n+prox\n  + 1) %25 \n@@ -1079,27 +1079,29 @@\n             \n-if \n+for !\n vivo%5Bind%5D %7B%0A\n@@ -1108,37 +1108,53 @@\n                 \n-break\n+ind = (ind + 1) %25 N %0A\n %0A            %7D%0A \n@@ -1154,39 +1154,37 @@\n     %7D%0A        %7D%0A\n+%0A\n     \n-%7D%0A%0A\n     fmt.Print(%22%5B\n@@ -1183,24 +1183,54 @@\n Print(%22%5B %22)%0A\n+        primeiro := true %0A    \n     for i :=\n@@ -1238,32 +1238,36 @@\n 0; i %3C N; i++ %7B%0A\n+    \n         if vivo%5B\n@@ -1263,32 +1263,78 @@\n    if vivo%5Bi%5D %7B%0A\n+                fmt.Print(%22 %22)%0A            %7D%0A%0A\n             fmt.\n@@ -1368,13 +1368,25 @@\n     \n-break\n+primeiro = false \n %0A   \n@@ -1392,23 +1392,21 @@\n       %7D%0A\n+%0A\n     \n-%7D%0A%0A\n     fmt.\n@@ -1419,10 +1419,13 @@\n n(%22 %5D%22)%0A\n-%0A\n+    \n %7D\n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-03-23_23-51-42",
+            "content": "@@ -285,17 +285,16 @@\n     for \n-i\n := 0; i \n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-03-23_23-52-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var N, E int \n    fmt.Scan(&N, &E)\n\n    vivo := make([]bool, N)\n    for i := 0; i < N; i++ {\n        vivo[i] = true \n    }\n\n    restantes := N \n    ind := E - 1\n    for restantes > 1 {\n        fmt.Print(\"[ \")\n        primeiro := true \n        for i:= 0; i < N; i++ {\n            if vivo[i] {\n                if !primeiro {\n                    fmt.Print(\" \")\n                }\n\n                if i == ind {\n                    fmt.Printf(\"%d>\", i+1)\n                } else {\n                    fmt.Printf(\"%d\", i+1)\n                }\n\n                primeiro = false \n            }\n        }\n\n        fmt.Println(\" ]\")\n\n        prox := ind\n        for {\n            prox = (prox + 1) % N \n            if vivo[prox] {\n                break\n            }\n        }\n\n        vivo[prox] = false \n        restantes--\n\n        ind = prox\n        for {\n            ind = (ind + 1) % N \n            if vivo[ind] {\n                break\n            }\n        }\n    }\n\n    fmt.Print(\"[ \")\n    for i := 0; i < N; i++ {\n        if vivo[i] {\n            fmt.Printf(\"%d>\", i+1)\n            break\n        }\n    }\n\n    fmt.Println(\" ]\")\n\n}",
+            "lines": "66"
+        }
+    ]
+}
