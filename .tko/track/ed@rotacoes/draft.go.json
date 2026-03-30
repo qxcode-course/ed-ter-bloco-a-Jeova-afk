@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-28_16-41-03",
+            "content": "@@ -81,354 +81,8 @@\n R)%0A%0A\n-    vetor := make(%5B%5Dint, T)%0A    for i := 0; i %3C T; i++ %7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A%0A    resultado := make(%5B%5Dint, T)%0A    for i := 0; i %3C T ; i++ %7B%0A        posicaonova := (i + R) %25 T%0A        resultado%5Bposicaonova%5D = vetor%5Bi%5D%0A    %7D%0A%0A    fmt.Print(%22%5B %22)%0A    for _, v := range resultado %7B%0A        fmt.Print(v, %22 %22)%0A    %7D%0A%0A%0A    fmt.Println(%22%5D%22)\n %0A%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-29_11-32-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    \n    var T, R int\n    fmt.Scan(&T, &R)\n\n    vetor := make([]int, T)\n    for i := 0; i < T; i++ {\n        fmt.Scan(&vetor[i])\n    }\n\n    resultado := make([]int, T)\n    for i := 0; i < T ; i++ {\n        posicaonova := (i + R) % T\n        resultado[posicaonova] = vetor[i]\n    }\n\n    fmt.Print(\"[ \")\n    for _, v := range resultado {\n        fmt.Print(v, \" \")\n    }\n\n\n    fmt.Println(\"]\")\n\n}\n",
+            "lines": "27"
+        }
+    ]
+}
