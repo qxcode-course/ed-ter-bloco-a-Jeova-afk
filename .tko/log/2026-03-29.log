@@ -1,3 +1,7 @@
 2026-03-29 11:32:19, MOVE, v:1, k:ed@rotacoes, mode:PICK
 2026-03-29 11:32:33, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:100, size:27
 2026-03-29 11:34:06, MOVE, v:1, k:ed@rotacoes, mode:BACK
+2026-03-29 22:13:08, MOVE, v:1, k:ed@manipulacao, mode:DOWN
+2026-03-29 22:13:10, MOVE, v:1, k:ed@manipulacao, mode:PICK
+2026-03-29 22:16:40, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:0, size:106
+2026-03-29 23:47:12, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:57, size:139

@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-29_22-16-40",
+            "content": "@@ -29,16 +29,8 @@\n io%22%0A\n-%09%22sort%22%0A\n %09%22fm\n@@ -99,416 +99,132 @@\n  %7B%0A%09\n-resultado := %5B%5Dint%7B%7D%0A%09for _, v := range vet %7B%0A%09%09if v %3E 0 %7B%0A%09%09%09resultado = append(resultado, v)%0A%09%09%7D%0A%09%7D%0A%0A%09return resultado%0A%0A%7D%0A%0Afunc getCalmWomen(vet %5B%5Dint) %5B%5Dint %7B%0A%09resultadoM := %5B%5Dint%7B%7D%0A%09for _, v := range vet %7B%0A%09%09if v %3C 0 && v * -1 %3C 10 %7B%0A%09%09%09resultadoM = append(resultadoM, v)%0A%09%09%7D%0A%09%7D%0A%0A%09return resultadoM%0A%7D%0A%0Afunc sortVet(vet %5B%5Dint) %5B%5Dint %7B%0A%09result := make(%5B%5Dint, len(vet))%0A%09copy(result, vet)%0A%09sort.Ints(result)\n+_ = vet%0A%09return nil%0A%7D%0A%0Afunc getCalmWomen(vet %5B%5Dint) %5B%5Dint %7B%0A%09_ = vet%0A%09return nil%0A%7D%0A%0Afunc sortVet(vet %5B%5Dint) %5B%5Dint %7B%0A%09_ = vet\n %0A%09re\n@@ -228,22 +228,19 @@\n %09return \n-result\n+nil\n %0A%7D%0A%0Afunc\n@@ -275,451 +275,83 @@\n  %7B%0A%09\n-positivos := %5B%5Dint%7B%7D%0A%09negativos := %5B%5Dint%7B%7D%0A%09for _, v := range vet %7B%0A%09%09if v %3E= 0 %7B %0A%09%09%09positivos = append(positivos, v)%0A%09%09%7D else %7B%0A%09%09%09negativos = append(negativos, v)%0A%09%09%7D%0A%0A%09%7D%0A%0A%09%09sort.Ints(positivos)%0A%09%09sort.Ints(negativos)%0A%09%09resultado := append(positivos, negativos...)%0A%09%09return resultado%0A%7D%0A%0Afunc reverse(vet %5B%5Dint) %5B%5Dint %7B%0A%09resultado := %5B%5Dint%7B%7D%0A%09for i := len(vet) - 1; i %3E= 0; i-- %7B%0A%09%09resultado = append(resultado, vet%5Bi%5D)%0A%09%7D%0A%0A%09return resultado\n+_ = vet%0A%09return nil%0A%7D%0A%0Afunc reverse(vet %5B%5Dint) %5B%5Dint %7B%0A%09_ = vet%0A%09return nil\n %0A%7D%0A%0A\n",
+            "lines": "106"
+        },
+        {
+            "label": "2026-03-29_23-47-12",
+            "content": "@@ -1049,390 +1049,84 @@\n  %7B%0A%09\n-resultado := %5B%5Dint%7B%7D%0A%09vistos := map%5Bint%5Dbool%7B%7D%0A%09for _, v := range vet %7B%0A%09%09if !vistos%5Bv%5D %7B%0A%09%09%09resultado = append(resultado, v)%0A%09%09%09vistos%5Bv%5D = true%0A%09%09%7D%0A%09%7D%0A%0A%09return resultado%0A%09%0A%7D%0A%0Afunc repeated(vet %5B%5Dint) %5B%5Dint %7B%0A%09resultado := %5B%5Dint%7B%7D%0A%09vistos := map%5Bint%5Dbool%7B%7D%0A%09for _, v := range vet %7B%0A%09%09if vistos%5Bv%5D %7B%0A%09%09%09resultado = append(resultado, v)%0A%09%09%7D%0A%0A%09%09vistos%5Bv%5D = true %0A%09%7D%0A%0A%09return resultado\n+_ = vet%0A%09return nil%0A%7D%0A%0Afunc repeated(vet %5B%5Dint) %5B%5Dint %7B%0A%09_ = vet%0A%09return nil\n %0A%7D%0A%0A\n",
+            "lines": "139"
+        },
+        {
+            "label": "2026-03-30_22-40-48",
+            "content": "@@ -703,101 +703,39 @@\n %0A%09%09%09\n-sort.Slice(negativos, func(i, j int) bool %7B%0A%09%09%09%09return negativos%5Bi%5D*-1 %3C negativos%5Bj%5D*-1%0A%09%09%09%7D\n+negativos = append(negativos, v\n )%0A%09%09\n",
+            "lines": "157"
+        },
+        {
+            "label": "2026-03-30_22-50-23",
+            "content": "@@ -703,81 +703,18 @@\n %0A%09%09%09\n-negativos = append(negativos, v)%0A%09%09%7D%0A%0A%09%7D%0A%0A%09sort.Ints(positivo)%0A%09sort.Ints\n+sort.Slice\n (neg\n@@ -743,16 +743,18 @@\n  bool %7B%0A\n+%09%09\n %09%09return\n@@ -792,13 +792,70 @@\n *-1%0A\n+%09%09\n %09%7D)%0A\n-%0A\n+%09%09%7D%0A%0A%09%7D%0A%0A%09%09sort.Ints(positivos)%0A%09%09sort.Ints(negativos)%0A%09\n %09res\n@@ -879,16 +879,17 @@\n positivo\n+s\n , negati\n@@ -896,16 +896,17 @@\n vos...)%0A\n+%09\n %09return \n",
+            "lines": "159"
+        },
+        {
+            "label": "2026-03-30_22-56-49",
+            "content": "@@ -760,17 +760,16 @@\n positivo\n-s\n )%0A%09sort.\n@@ -883,17 +883,16 @@\n positivo\n-s\n , negati\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-30_22-57-10",
+            "content": "@@ -773,13 +773,12 @@\n ort.\n-Slice\n+Ints\n (neg\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-30_22-58-22",
+            "content": "@@ -881,23 +881,23 @@\n end(\n-nega\n+posi\n tivos, \n-posi\n+nega\n tivo\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-30_22-59-42",
+            "content": "@@ -570,63 +570,203 @@\n  %7B%0A%09\n-resultado := make(%5B%5Dint, len(vet))%0A%09copy(resultado, vet\n+positivos := %5B%5Dint%7B%7D%0A%09negativos := %5B%5Dint%7B%7D%0A%09for _, v := range vet %7B%0A%09%09if v %3E= 0 %7B %0A%09%09%09positivos = append(positivos, v)%0A%09%09%7D else %7B%0A%09%09%09negativos = append(negativos, v)%0A%09%09%7D%0A%0A%09%7D%0A%0A%09sort.Ints(positivos\n )%0A%09s\n@@ -775,25 +775,25 @@\n t.Slice(\n-resultado\n+negativos\n , func(i\n@@ -814,138 +814,99 @@\n %7B%0A%09%09\n-si := resultado%5Bi%5D%0A%09%09sj := resultado%5Bj%5D%0A%09%09if si %3C 0 %7B%0A%09%09%09si = si * -1%0A%09%09%7D%0A%09%09if sj %3C 0 %7B%0A%09%09%09sj = sj * -1%0A%09%09%7D%0A%0A%09%09return si %3C sj%0A%09%7D)%0A\n+return negativos%5Bi%5D*-1 %3C negativos%5Bj%5D*-1%0A%09%7D)%0A%0A%09resultado := append(negativos, positivos...)\n %0A%09re\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-30_23-07-33",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"sort\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc getMen(vet []int) []int {\n\tresultado := []int{}\n\tfor _, v := range vet {\n\t\tif v > 0 {\n\t\t\tresultado = append(resultado, v)\n\t\t}\n\t}\n\n\treturn resultado\n\n}\n\nfunc getCalmWomen(vet []int) []int {\n\tresultadoM := []int{}\n\tfor _, v := range vet {\n\t\tif v < 0 && v * -1 < 10 {\n\t\t\tresultadoM = append(resultadoM, v)\n\t\t}\n\t}\n\n\treturn resultadoM\n}\n\nfunc sortVet(vet []int) []int {\n\tresult := make([]int, len(vet))\n\tcopy(result, vet)\n\tsort.Ints(result)\n\treturn result\n}\n\nfunc sortStress(vet []int) []int {\n\tresultado := make([]int, len(vet))\n\tcopy(resultado, vet)\n\tsort.Slice(resultado, func(i, j int) bool {\n\t\tsi := resultado[i]\n\t\tsj := resultado[j]\n\t\tif si < 0 {\n\t\t\tsi = si * -1\n\t\t}\n\t\tif sj < 0 {\n\t\t\tsj = sj * -1\n\t\t}\n\n\t\treturn si < sj\n\t})\n\n\treturn resultado\n}\n\nfunc reverse(vet []int) []int {\n\tresultado := []int{}\n\tfor i := len(vet) - 1; i >= 0; i-- {\n\t\tresultado = append(resultado, vet[i])\n\t}\n\n\treturn resultado\n}\n\nfunc unique(vet []int) []int {\n\tresultado := []int{}\n\tvistos := map[int]bool{}\n\tfor _, v := range vet {\n\t\tif !vistos[v] {\n\t\t\tresultado = append(resultado, v)\n\t\t\tvistos[v] = true\n\t\t}\n\t}\n\n\treturn resultado\n\t\n}\n\nfunc repeated(vet []int) []int {\n\tresultado := []int{}\n\tvistos := map[int]bool{}\n\tfor _, v := range vet {\n\t\tif vistos[v] {\n\t\t\tresultado = append(resultado, v)\n\t\t}\n\n\t\tvistos[v] = true \n\t}\n\n\treturn resultado\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tfor {\n\t\tif !scanner.Scan() {\n\t\t\tbreak\n\t\t}\n\t\tfmt.Print(\"$\")\n\t\tline := scanner.Text()\n\t\targs := strings.Split(line, \" \")\n\t\tfmt.Println(line)\n\n\t\tswitch args[0] {\n\t\tcase \"get_men\":\n\t\t\tprintVec(getMen(str2vet(args[1])))\n\t\tcase \"get_calm_women\":\n\t\t\tprintVec(getCalmWomen(str2vet(args[1])))\n\t\tcase \"sort\":\n\t\t\tprintVec(sortVet(str2vet(args[1])))\n\t\tcase \"sort_stress\":\n\t\t\tprintVec(sortStress(str2vet(args[1])))\n\t\tcase \"reverse\":\n\t\t\tarray := str2vet(args[1])\n\t\t\tother := reverse(array)\n\t\t\tprintVec(array)\n\t\t\tprintVec(other)\n\t\tcase \"unique\":\n\t\t\tprintVec(unique(str2vet(args[1])))\n\t\tcase \"repeated\":\n\t\t\tprintVec(repeated(str2vet(args[1])))\n\t\tcase \"end\":\n\t\t\treturn\n\t\t}\n\t}\n}\n\nfunc printVec(vet []int) {\n\tfmt.Print(\"[\")\n\tfor i, val := range vet {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\t\tfmt.Print(val)\n\t}\n\tfmt.Println(\"]\")\n}\n\nfunc str2vet(s string) []int {\n\tif s == \"[]\" {\n\t\treturn nil\n\t}\n\ts = s[1 : len(s)-1]\n\tparts := strings.Split(s, \",\")\n\tvar vet []int\n\tfor _, part := range parts {\n\t\tn, _ := strconv.Atoi(part)\n\t\tvet = append(vet, n)\n\t}\n\treturn vet\n}\n\n",
+            "lines": "158"
+        }
+    ]
+}
