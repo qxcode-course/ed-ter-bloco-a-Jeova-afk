@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_22-04-42",
+            "content": "@@ -200,10 +200,12 @@\n n fa\n-i\n l\n+se \n %0A%09%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-06_22-05-13",
+            "content": "@@ -196,19 +196,18 @@\n eturn fa\n+i\n l\n-se\n %0A%09%7D%0A%0A%09re\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-06_22-05-27",
+            "content": "@@ -208,40 +208,8 @@\n %09%7D%0A%0A\n-%09if x == 1 %7B%0A%09%09return false%0A%09%7D%0A%0A\n %09ret\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-06_22-06-48",
+            "content": "package main\n\nimport \"fmt\"\n\n// x: n\u00famero que est\u00e1 sendo testado\n// div: divisor que est\u00e1 sendo testado\nfunc eh_primo(x int, div int) bool {\n\tif div == x {\n\t\treturn true\n\t}\n\n\tif x % div == 0 {\n\t\treturn false\n\t}\n\n\tif x == 1 {\n\t\treturn false\n\t}\n\n\treturn eh_primo(x, div+1)\n}\n\nfunc main() {\n\tvar x int\n\tfmt.Scan(&x)\n\tif eh_primo(x, 2) {\n\t\tfmt.Println(\"true\")\n\t} else {\n\t\tfmt.Println(\"false\")\n\t}\n}\n",
+            "lines": "31"
+        }
+    ]
+}
