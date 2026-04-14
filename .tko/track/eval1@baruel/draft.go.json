@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_10-31-46",
+            "content": "@@ -340,20 +340,16 @@\n etidas, \n-temp\n )%0A      \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_10-33-37",
+            "content": "@@ -359,88 +359,8 @@\n    %7D\n-%0A%0A        aux%5Btemp%5D = true %0A    %7D%0A%0A    for i := 1; i %3C qtd_total; i++ %7B%0A        \n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_10-39-34",
+            "content": "@@ -439,121 +439,9 @@\n     \n-if !aux%5Btemp%5D %7B%0A            faltando = append(faltando, i)%0A        %7D%0A    %7D%0A%0A    if len(repetidas) %3E 0 %7B%0A    %0A    \n+%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-14_10-54-20",
+            "content": "@@ -547,34 +547,13 @@\n     \n+%0A\n     \n-fmt.Printf(repetidas)%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-14_10-58-19",
+            "content": "@@ -578,147 +578,8 @@\n    %7D\n- else %7B%0A        fmt.Println(%22N%22)%0A    %7D%0A%0A    if len(faltando) %3E 0 %7B%0A        fmt.Printf(faltando)%0A    %7D else %7B%0A        fmt.Println(%22N%22)%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-14_11-12-17",
+            "content": "@@ -552,414 +552,128 @@\n    f\n-or i, num  := range repetidas %7B%0A            if i %3E 0 %7B%0A                fmt.Printf(%22 %22)%0A            %7D%0A%0A            fmt.Print(num)%0A        %7D%0A        %0A        fmt.Println()%0A    %7D else %7B%0A        fmt.Println(%22N%22)%0A    %7D%0A%0A    if len(faltando) %3E 0 %7B%0A        for i, num range faltando %7B%0A            if i %3E 0 %7B%0A                fmt.Printf(%22 %22)%0A            %7D%0A%0A            fmt.Print(num)%0A        %7D%0A%0A        fmt.Println(\n+mt.Printf(repetidas)%0A    %7D else %7B%0A        fmt.Println(%22N%22)%0A    %7D%0A%0A    if len(faltando) %3E 0 %7B%0A        fmt.Printf(faltando\n )%0A  \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-14_11-19-04",
+            "content": "@@ -558,16 +558,17 @@\n  i, num \n+ \n := range\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-04-14_11-19-39",
+            "content": "@@ -137,17 +137,16 @@\n aps%5Bint%5D\n-,\n  bool)%0A \n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-04-14_11-21-26",
+            "content": "@@ -804,27 +804,24 @@\n   for i, num\n- :=\n  range falta\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-04-14_11-22-08",
+            "content": "@@ -131,16 +131,17 @@\n make(map\n+s\n %5Bint%5D, b\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-04-14_11-24-16",
+            "content": "@@ -136,16 +136,17 @@\n map%5Bint%5D\n+,\n  bool)%0A \n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-04-14_11-27-19",
+            "content": "@@ -195,27 +195,8 @@\n nt%0A%0A\n-     var temp int%0A%0A\n     \n@@ -221,32 +221,53 @@\n d_possui; i++ %7B%0A\n+        var temp int%0A\n         fmt.Scan\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-04-14_11-28-12",
+            "content": "@@ -997,38 +997,8 @@\n N%22)%0A\n-        fmt.Println(faltando)%0A\n     \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-04-14_11-36-42",
+            "content": "@@ -403,38 +403,37 @@\n i := 1; i %3C qtd_\n-possui\n+total\n ; i++ %7B%0A        \n@@ -989,21 +989,51 @@\n rintln(%22N%22)%0A\n+        fmt.Println(faltando)%0A\n     %7D%0A%0A%7D%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-04-14_11-38-25",
+            "content": "@@ -411,21 +411,22 @@\n i %3C qtd_\n-total\n+possui\n ; i++ %7B%0A\n@@ -441,17 +441,20 @@\n if !aux%5B\n-i\n+temp\n %5D %7B%0A    \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-04-14_11-39-50",
+            "content": "@@ -406,17 +406,16 @@\n = 1; i %3C\n-=\n  qtd_tot\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-04-14_11-41-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    \n\n    var qtd_possui, qtd_total int\n    fmt.Scan(&qtd_total, &qtd_possui)\n\n    aux := make(map[int] bool)\n    var repetidas []int\n    var faltando []int\n\n     var temp int\n\n    for i := 0; i < qtd_possui; i++ {\n        fmt.Scan(&temp)\n        if aux[temp] {\n            repetidas = append(repetidas, temp)\n        }\n\n        aux[temp] = true \n    }\n\n    for i := 1; i <= qtd_total; i++ {\n        if !aux[i] {\n            faltando = append(faltando, i)\n        }\n    }\n\n    if len(repetidas) > 0 {\n        for i, num := range repetidas {\n            if i > 0 {\n                fmt.Printf(\" \")\n            }\n\n            fmt.Print(num)\n        }\n        \n        fmt.Println()\n    } else {\n        fmt.Println(\"N\")\n    }\n\n    if len(faltando) > 0 {\n        for i, num := range faltando {\n            if i > 0 {\n                fmt.Printf(\" \")\n            }\n\n            fmt.Print(num)\n        }\n\n        fmt.Println()\n    } else {\n        fmt.Println(\"N\")\n    }\n\n}\n",
+            "lines": "58"
+        }
+    ]
+}
