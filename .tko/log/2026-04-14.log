@@ -38,3 +38,8 @@
 2026-04-14 11:41:58, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:100, size:58
 2026-04-14 11:42:46, MOVE, v:1, k:eval1@baruel, mode:BACK
 2026-04-14 11:43:17, SELF, v:1, k:eval1@baruel, self:1, rate:100
+2026-04-14 11:45:21, MOVE, v:1, k:eval1@apagando, mode:DOWN
+2026-04-14 11:45:26, MOVE, v:1, k:eval1@apagando, mode:PICK
+2026-04-14 11:45:21, MOVE, v:1, k:eval1@apagando, mode:EDIT
+2026-04-14 11:45:21, MOVE, v:1, k:eval1@apagando, mode:EDIT
+2026-04-14 11:45:21, MOVE, v:1, k:eval1@apagando, mode:EDIT
