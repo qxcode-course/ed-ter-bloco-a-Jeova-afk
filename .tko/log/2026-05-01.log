@@ -1,0 +1,14 @@
+2026-05-01 16:45:12, MOVE, v:1, k:ed@setbuild, mode:PICK
+2026-05-01 18:15:43, MOVE, v:1, k:ed@setbuild, mode:PICK
+2026-05-01 18:15:50, EXEC, v:1, k:ed@setbuild, mode:FULL, size:120, fail:COMP
+2026-05-01 18:16:20, EXEC, v:1, k:ed@setbuild, mode:FULL, size:120, fail:COMP
+2026-05-01 18:16:19, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-05-01 18:18:59, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:33, size:121
+2026-05-01 18:18:54, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-05-01 18:26:04, EXEC, v:1, k:ed@setbuild, mode:FULL, size:122, fail:COMP
+2026-05-01 18:27:38, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:66, size:127
+2026-05-01 18:27:33, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-05-01 18:43:01, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:66, size:151
+2026-05-01 18:42:56, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-05-01 18:46:15, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:100, size:151
+2026-05-01 18:46:23, MOVE, v:1, k:ed@setbuild, mode:BACK
