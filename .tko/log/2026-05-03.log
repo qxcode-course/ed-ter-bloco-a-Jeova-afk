@@ -1,0 +1,14 @@
+2026-05-03 01:03:20, SELF, v:1, k:ed@setbuild, self:1, rate:100, concept:1, refactor:1
+2026-05-03 01:03:40, SELF, v:1, k:ed@bettersearch, self:1, rate:100, concept:1, refactor:1
+2026-05-03 01:04:10, MOVE, v:1, k:ed@multiset, mode:PICK
+2026-05-03 01:04:12, MOVE, v:1, k:ed@multiset, mode:BACK
+2026-05-03 01:06:08, MOVE, v:1, k:ed@lista_d1, mode:DOWN
+2026-05-03 01:06:12, MOVE, v:1, k:ed@lista_d1, mode:PICK
+2026-05-03 01:06:08, MOVE, v:1, k:ed@lista_d1, mode:EDIT
+2026-05-03 01:06:08, MOVE, v:1, k:ed@lista_d1, mode:EDIT
+2026-05-03 01:06:08, MOVE, v:1, k:ed@lista_d1, mode:EDIT
+2026-05-03 01:06:08, MOVE, v:1, k:ed@lista_d1, mode:EDIT
+2026-05-03 01:13:14, MOVE, v:1, k:ed@lista_d1, mode:BACK
+2026-05-03 01:13:29, MOVE, v:1, k:ed@lista_d1, mode:PICK
+2026-05-03 01:20:39, MOVE, v:1, k:ed@lista_d1, mode:BACK
+2026-05-03 01:20:47, MOVE, v:1, k:ed@lista_d1, mode:PICK
