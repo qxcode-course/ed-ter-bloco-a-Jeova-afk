@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_16-00-17",
+            "content": "@@ -1,105 +0,0 @@\n-package main%0A%0Aimport %22github.com/gdamore/tcell/v2%22%0A%0Afunc main() %7B%0A    // C%C3%B3digo do seu editor vai aqui%0A%7D%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2026-05-05_16-04-25",
+            "content": "package main\n\nimport \"github.com/gdamore/tcell/v2\"\n\nfunc main() {\n    // C\u00f3digo do seu editor vai aqui\n}\n",
+            "lines": "7"
+        }
+    ]
+}
