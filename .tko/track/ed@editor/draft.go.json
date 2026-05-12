@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_00-07-20",
+            "content": "@@ -484,33 +484,33 @@\n  len(direita) %3E \n-0\n+1\n  %7B%0A             \n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-12_00-07-35",
+            "content": "@@ -843,32 +843,33 @@\n erda = esquerda%5B\n+;\n len(esquerda)-1%5D\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-12_00-07-49",
+            "content": "@@ -851,17 +851,16 @@\n squerda%5B\n-:\n len(esqu\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-12_00-08-17",
+            "content": "@@ -69,16 +69,17 @@\n %0A%0A    in\n+r\n  := bufi\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-12_00-08-41",
+            "content": "@@ -399,32 +399,33 @@\n querda = esquerd\n+d\n a%5B:len(esquerda)\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-12_00-08-57",
+            "content": "@@ -1054,17 +1054,43 @@\n rda)\n- + %22%7C%22 + \n+)%0A    fmt.Print(%22%7C%22)%0A    fmt.Print(\n stri\n@@ -1103,10 +1103,11 @@\n eita))%0A%0A\n+%0A\n %7D%0A\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-12_00-11-23",
+            "content": "@@ -1078,15 +1078,8 @@\n ita)\n- + %22%5Cn%22\n )%0A%0A%7D\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-05-12_00-13-18",
+            "content": "package main\nimport (\n    \"bufio\"\n    \"fmt\"\n    \"os\"\n)\nfunc main() {\n\n    in := bufio.NewReader(os.Stdin)\n\n    var entrada string\n    fmt.Fscan(in, &entrada)\n\n    esquerda := []rune{}\n    direita := []rune{}\n\n    for _, c := range entrada {\n\n        switch c {\n\n        case 'R':\n            esquerda = append(esquerda, '\\n')\n\n        case 'B':\n            if len(esquerda) > 0 {\n                esquerda = esquerda[:len(esquerda)-1]\n            }\n\n        case 'D':\n            if len(direita) > 0 {\n                direita = direita[1:]\n            }\n\n        case '>':\n            if len(direita) > 0 {\n                esquerda = append(esquerda, direita[0])\n                direita = direita[1:]\n            }\n\n        case '<':\n            if len(esquerda) > 0 {\n                ultimo := esquerda[len(esquerda)-1]\n                esquerda = esquerda[:len(esquerda)-1]\n                direita = append([]rune{ultimo}, direita...)\n            }\n\n        default:\n            esquerda = append(esquerda, c)\n        }\n    }\n\n    fmt.Print(string(esquerda) + \"|\" + string(direita) + \"\\n\")\n\n}\n",
+            "lines": "54"
+        }
+    ]
+}
