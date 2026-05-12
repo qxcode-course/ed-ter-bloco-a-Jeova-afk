@@ -31,5 +31,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@editor
-selected_index: 18
+selected: ed@prin_list1
+selected_index: 15
