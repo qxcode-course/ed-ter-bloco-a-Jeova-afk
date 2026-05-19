@@ -1,0 +1,22 @@
+2026-05-19 00:42:39, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-05-19 00:46:48, MOVE, v:1, k:ed@ilhas, mode:DOWN
+2026-05-19 00:46:50, MOVE, v:1, k:ed@ilhas, mode:PICK
+2026-05-19 00:46:48, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-05-19 00:46:48, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-05-19 00:46:48, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-05-19 01:04:52, EXEC, v:1, k:ed@ilhas, mode:FULL, size:66, fail:COMP
+2026-05-19 01:05:40, EXEC, v:1, k:ed@ilhas, mode:FULL, size:66, fail:COMP
+2026-05-19 01:06:37, EXEC, v:1, k:ed@ilhas, mode:FULL, rate:100, size:66
+2026-05-19 01:06:45, MOVE, v:1, k:ed@ilhas, mode:BACK
+2026-05-19 01:07:20, SELF, v:1, k:ed@ilhas, self:1, rate:100, concept:1
+2026-05-19 01:08:27, MOVE, v:1, k:ed@distancia, mode:DOWN
+2026-05-19 01:08:34, MOVE, v:1, k:ed@distancia, mode:PICK
+2026-05-19 01:08:27, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-05-19 01:08:27, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-05-19 01:08:27, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-05-19 01:25:17, EXEC, v:1, k:ed@distancia, mode:FULL, size:64, fail:COMP
+2026-05-19 01:25:48, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:64
+2026-05-19 01:26:40, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0
+2026-05-19 01:26:48, EXEC, v:1, k:ed@distancia, mode:FULL, rate:100, size:64
+2026-05-19 01:26:51, MOVE, v:1, k:ed@distancia, mode:BACK
+2026-05-19 01:27:58, SELF, v:1, k:ed@distancia, self:1, rate:100, concept:1

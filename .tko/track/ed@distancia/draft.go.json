@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-25-17",
+            "content": "@@ -254,17 +254,17 @@\n  == valo\n-r\n+e\n  %7B%0A     \n@@ -461,17 +461,16 @@\n return r\n-e\n solver(s\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-05-19_01-25-48",
+            "content": "@@ -173,17 +173,16 @@\n 0 %7C%7C i %3E\n-=\n  len(seq\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-05-19_01-26-48",
+            "content": "package main\n\nimport (\n    \"bufio\"\n    \"fmt\"\n    \"os\"\n)\n\nfunc valido(seq []rune, pos int, valor rune, L int) bool {\n    for i := pos - L; i <= pos+L; i++ {\n\n        if i < 0 || i >= len(seq) || i == pos {\n            continue\n        }\n\n        if seq[i] == valor {\n            return false\n        }\n    }\n\n    return true\n}\n\nfunc resolver(seq []rune, pos int, L int) bool {\n    if pos == len(seq) {\n        return true\n    }\n\n    if seq[pos] != '.' {\n        return resolver(seq, pos+1, L)\n    }\n\n    for num := 0; num <= L; num++ {\n        valor := rune(num + '0')\n\n        if valido(seq, pos, valor, L) {\n            seq[pos] = valor\n\n            if resolver(seq, pos+1, L) {\n                return true\n            }\n\n            seq[pos] = '.'\n        }\n    }\n\n    return false\n}\n\nfunc main() {\n    in := bufio.NewReader(os.Stdin)\n\n    var entrada string\n    var L int\n\n    fmt.Fscan(in, &entrada)\n    fmt.Fscan(in, &L)\n\n    seq := []rune(entrada)\n\n    resolver(seq, 0, L)\n\n    fmt.Println(string(seq))\n}\n",
+            "lines": "64"
+        }
+    ]
+}
