@@ -19,15 +19,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@tree
-- ed@dfs
-- ed@backtrack
-- ed@list
-- ed@rec
-- ed@vector
-- ed@basic
 - ed@map_set
+- ed@dfs
+- ed@vector
 - ed@linear
+- ed@list
+- ed@tree
+- ed@backtrack
+- ed@basic
+- ed@rec
 flags:
   inbox: all
   panel: skills
@@ -35,5 +35,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@distancia
-selected_index: 45
+selected: ed@ilhas
+selected_index: 90
