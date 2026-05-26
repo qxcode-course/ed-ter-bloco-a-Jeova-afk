@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_16-02-01",
+            "content": "@@ -23,197 +23,53 @@\n mt%22%0A\n-%0A\n func \n-divisao(n int)%7B%0A    if n == 0 %7B%0A        return %0A    %7D%0A%0A    div := n / 2%0A    resto := n %25 2%0A%0A    fmt.Println(div, resto)%0A%7D%0A%0Afunc main() %7B%0A    var n int %0A    fmt.Scan(&n)%0A%0A    divisao(n\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-23_16-05-16",
+            "content": "@@ -84,30 +84,8 @@\n  %7D%0A%0A\n-    divisao(div)%0A    %0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-23_16-05-52",
+            "content": "@@ -80,16 +80,33 @@\n %0A    %7D%0A%0A\n+    divisao(div)%0A\n     %0A   \n@@ -138,37 +138,16 @@\n = n %25 2%0A\n-    divisao(div)%0A    \n %0A    fmt\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-23_16-06-09",
+            "content": "package main\nimport \"fmt\"\n\nfunc divisao(n int){\n    if n == 0 {\n        return \n    }\n\n    \n    div := n / 2\n    resto := n % 2\n    divisao(div)\n    \n    fmt.Println(div, resto)\n}\n\nfunc main() {\n    var n int \n    fmt.Scan(&n)\n\n    divisao(n)\n}\n",
+            "lines": "22"
+        }
+    ]
+}

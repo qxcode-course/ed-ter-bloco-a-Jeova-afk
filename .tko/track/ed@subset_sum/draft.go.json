@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_00-59-41",
+            "content": "@@ -197,25 +197,25 @@\n (n)%0A    fmt.\n-P\n+p\n rintln(targe\n@@ -218,11 +218,10 @@\n arget)%0A%0A\n-%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-25_01-00-07",
+            "content": "@@ -221,30 +221,8 @@\n et)%0A\n-    fmt.Println(nums)%0A\n %0A%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_01-00-26",
+            "content": "@@ -182,505 +182,69 @@\n     \n-var backtrack func(index, sum int) bool%0A%0A    backtrack = func(index, sum int) bool %7B%0A        if sum == target %7B%0A            return true%0A        %7D%0A%0A        if index %3E= n %7B%0A            return false%0A        %7D%0A%0A        if sum %3E target %7B%0A            return false%0A        %7D%0A%0A        take := backtrack(index+1, sum+nums%5Bindex%5D)%0A%0A        skip := backtrack(index+1, sum)%0A%0A        return take %7C%7C skip%0A    %7D%0A%0A    if backtrack(0, 0)%7B%0A        fmt.Println(%22true%22)%0A    %7D else %7B%0A        fmt.Println(%22false%22)%0A    %7D\n+fmt.Println(n)%0A    fmt.Println(target)%0A    fmt.Println(nums)%0A\n %0A%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-25_01-15-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, target int\n    fmt.Scan(&n, &target)\n\n    nums := make([]int, n)\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&nums[i])\n    } \n\n    var backtrack func(index, sum int) bool\n\n    backtrack = func(index, sum int) bool {\n        if sum == target {\n            return true\n        }\n\n        if index >= n {\n            return false\n        }\n\n        if sum > target {\n            return false\n        }\n\n        take := backtrack(index+1, sum+nums[index])\n\n        skip := backtrack(index+1, sum)\n\n        return take || skip\n    }\n\n    if backtrack(0, 0){\n        fmt.Println(\"true\")\n    } else {\n        fmt.Println(\"false\")\n    }\n\n}\n",
+            "lines": "41"
+        }
+    ]
+}

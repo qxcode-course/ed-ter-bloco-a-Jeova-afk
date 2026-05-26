@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-20_00-21-43",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n// N\u00c3O ALTERE A ASSINATURA DA FUN\u00c7\u00c3O solve\nfunc solve(board [][]byte) {\n\tif len(board) == 0 {\n\t\treturn\n\t} \n\n\trows := len(board)\n\tcols := len(board[0])\n\n\tvisited := make([][]bool, rows)\n\n\tfor i := 0; i < rows; i++ {\n\t\tvisited[i] = make([]bool, cols)\n\t}\n\n\tvar dfs func(int, int)\n\t\n\tdfs = func(r int, c int) {\n\t\tif r < 0 || r >= rows || c < 0|| c >= cols {\n\t\t\treturn \n\t\t}\n\t\n\t\tif visited[r][c] || board[r][c] != 'O' {\n\t\t\treturn\n\t\t}\n\t\n\t\tvisited[r][c] = true\n\t\n\t\tdfs(r+1, c)\n\t\tdfs(r-1, c)\n\t\tdfs(r, c+1)\n\t\tdfs(r, c-1)\n\t\n\t}\n\n\tfor i := 0; i < rows; i++ {\n\t\tdfs(i, 0)\n\t\tdfs(i, cols-1)\n\t}\n\n\tfor j := 0; j < cols; j++ {\n\t\tdfs(0, j)\n\t\tdfs(rows-1, j)\n\t}\n\n\tfor i := 0; i < rows; i++ {\n\t\tfor j := 0; j < cols; j++ {\n\t\t\tif board[i][j] == 'O' && !visited[i][j] {\n\t\t\t\tboard[i][j] = 'X'\n\t\t\t}\n\t\t}\n\t}\n}\n\n\n// N\u00c3O ALTERE A MAIN\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tvar nrows, ncols int\n\tfmt.Sscanf(scanner.Text(), \"%d %d\", &nrows, &ncols)\n\tboard := make([][]byte, nrows)\n\tfor i := 0; i < nrows; i++ {\n\t\tscanner.Scan() \n\t\tboard[i] = []byte(scanner.Text())\n\t}\n\tsolve(board)\n\tfor _, row := range board {\n\t\tfmt.Println(string(row))\n\t}\n}\n",
+            "lines": "79"
+        }
+    ]
+}

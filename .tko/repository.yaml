@@ -19,21 +19,20 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@linear
-- ed@map_set
-- ed@backtrack
-- ed@rec
-- ed@vector
 - ed@dfs
-- ed@basic
+- ed@backtrack
+- ed@linear
 - ed@list
-- ed@tree
+- ed@basic
+- ed@vector
+- ed@map_set
+- ed@rec
 flags:
   inbox: all
   panel: skills
-  show_panel: 'false'
+  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@labirinto
-selected_index: 24
+selected: ed@cercado
+selected_index: 81

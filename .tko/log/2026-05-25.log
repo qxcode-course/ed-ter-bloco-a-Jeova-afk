@@ -1,0 +1,16 @@
+2026-05-25 00:45:12, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:0, size:102
+2026-05-25 00:45:36, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:100, size:102
+2026-05-25 00:45:56, MOVE, v:1, k:ed@wordsearch, mode:BACK
+2026-05-25 00:46:43, SELF, v:1, k:ed@wordsearch, self:1, rate:100, concept:1
+2026-05-25 00:46:59, MOVE, v:1, k:ed@subset_sum, mode:DOWN
+2026-05-25 00:47:14, MOVE, v:1, k:ed@subset_sum, mode:PICK
+2026-05-25 00:46:59, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-05-25 00:46:59, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-05-25 00:46:59, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-05-25 00:59:41, EXEC, v:1, k:ed@subset_sum, mode:FULL, size:16, fail:COMP
+2026-05-25 01:00:07, EXEC, v:1, k:ed@subset_sum, mode:FULL, rate:0, size:17
+2026-05-25 01:00:26, EXEC, v:1, k:ed@subset_sum, mode:FULL, rate:0, size:18
+2026-05-25 01:00:23, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-05-25 01:15:52, EXEC, v:1, k:ed@subset_sum, mode:FULL, rate:100, size:41
+2026-05-25 01:16:04, MOVE, v:1, k:ed@subset_sum, mode:BACK
+2026-05-25 01:15:47, MOVE, v:1, k:ed@subset_sum, mode:EDIT

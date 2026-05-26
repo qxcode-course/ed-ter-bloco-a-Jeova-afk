@@ -1,0 +1,42 @@
+2026-05-20 00:21:43, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100, size:79
+2026-05-20 00:22:38, MOVE, v:1, k:ed@cercado, mode:BACK
+2026-05-20 00:23:24, MOVE, v:1, k:ed@cercado, mode:PICK
+2026-05-20 00:23:30, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 00:23:30, MOVE, v:1, k:ed@cercado, mode:BACK
+2026-05-20 00:24:10, MOVE, v:1, k:ed@cercado, mode:PICK
+2026-05-20 09:17:18, MOVE, v:1, k:ed@pintura, mode:DOWN
+2026-05-20 09:17:50, MOVE, v:1, k:ed@cercado, mode:PICK
+2026-05-20 09:17:55, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 09:17:56, MOVE, v:1, k:ed@cercado, mode:BACK
+2026-05-20 09:18:51, MOVE, v:1, k:ed@pintura, mode:PICK
+2026-05-20 10:05:52, EXEC, v:1, k:ed@pintura, mode:FULL, size:57, fail:COMP
+2026-05-20 10:05:58, EXEC, v:1, k:ed@pintura, mode:FULL, rate:100, size:83
+2026-05-20 10:06:20, MOVE, v:1, k:ed@pintura, mode:BACK
+2026-05-20 10:06:39, MOVE, v:1, k:ed@cercado, mode:PICK
+2026-05-20 10:06:40, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:41, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:42, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:43, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:44, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:45, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:46, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:47, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:47, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:48, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:49, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:49, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:50, EXEC, v:1, k:ed@cercado, mode:FULL, rate:100
+2026-05-20 10:06:50, MOVE, v:1, k:ed@cercado, mode:BACK
+2026-05-20 10:09:02, MOVE, v:1, k:ed@cercado, mode:PICK
+2026-05-20 10:11:30, MOVE, v:1, k:ed@cercado, mode:BACK
+2026-05-20 10:16:04, MOVE, v:1, k:ed@+dfs, mode:DOWN
+2026-05-20 10:16:08, MOVE, v:1, k:ed@+dfs, mode:PICK
+2026-05-20 10:16:28, MOVE, v:1, k:ed@+dfs, mode:BACK
+2026-05-20 10:16:04, MOVE, v:1, k:ed@+dfs, mode:EDIT
+2026-05-20 10:16:04, MOVE, v:1, k:ed@+dfs, mode:EDIT
+2026-05-20 10:44:20, MOVE, v:1, k:ed@triangulo, mode:PICK
+2026-05-20 11:07:47, EXEC, v:1, k:ed@triangulo, mode:FULL, rate:100
+2026-05-20 11:16:33, MOVE, v:1, k:ed@triangulo, mode:BACK
+2026-05-20 11:26:03, MOVE, v:1, k:ed@treinando, mode:PICK
+2026-05-20 11:33:43, MOVE, v:1, k:ed@treinando, mode:BACK
+2026-05-20 11:34:05, MOVE, v:1, k:ed@cercado, mode:PICK
