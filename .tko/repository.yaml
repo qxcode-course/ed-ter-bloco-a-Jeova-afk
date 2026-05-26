@@ -19,13 +19,13 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@map_set
-- ed@rec
-- ed@linear
 - ed@vector
 - ed@backtrack
+- ed@linear
 - ed@basic
 - ed@dfs
+- ed@map_set
+- ed@rec
 - ed@list
 flags:
   inbox: all
@@ -34,5 +34,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@pintura
-selected_index: 82
+selected: ed@wordsearch
+selected_index: 43

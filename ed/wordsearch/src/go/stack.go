@@ -31,3 +31,4 @@ func (s *Stack[T]) Pop() T {
 	s.data = s.data[:len(s.data)-1]
 	return value
 }
+v
