@@ -13,3 +13,9 @@
 2026-05-26 01:22:48, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:100
 2026-05-26 01:23:10, MOVE, v:1, k:ed@wordsearch, mode:BACK
 2026-05-26 01:23:15, MOVE, v:1, k:ed@wordsearch, mode:PICK
+2026-05-26 01:23:25, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-05-26 01:28:11, MOVE, v:1, k:ed@subset_sum, mode:PICK
+2026-05-26 01:28:28, MOVE, v:1, k:ed@subset_sum, mode:BACK
+2026-05-26 01:28:39, MOVE, v:1, k:ed@subset_sum, mode:PICK
+2026-05-26 01:28:47, EXEC, v:1, k:ed@subset_sum, mode:FULL, rate:100
+2026-05-26 01:28:57, MOVE, v:1, k:ed@subset_sum, mode:BACK
