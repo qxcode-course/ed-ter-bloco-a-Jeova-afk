@@ -1,0 +1,8 @@
+2026-06-01 22:03:17, MOVE, v:1, k:ed@bufferring, mode:PICK
+2026-06-01 23:13:25, EXEC, v:1, k:ed@bufferring, mode:FULL, size:122, fail:COMP
+2026-06-01 23:15:37, EXEC, v:1, k:ed@bufferring, mode:FULL, size:123, fail:COMP
+2026-06-01 23:15:33, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-06-01 23:21:11, EXEC, v:1, k:ed@bufferring, mode:FULL, size:136, fail:COMP
+2026-06-01 23:21:09, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-06-01 23:54:41, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0, size:170
+2026-06-01 23:54:37, MOVE, v:1, k:ed@bufferring, mode:EDIT

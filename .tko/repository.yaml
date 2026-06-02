@@ -19,20 +19,19 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@backtrack
-- ed@rec
-- ed@vector
 - ed@map_set
-- ed@basic
+- ed@backtrack
+- ed@vector
 - ed@list
+- ed@basic
 - ed@linear
-- ed@dfs
+- ed@rec
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@subset_sum
-selected_index: 44
+selected: ed@bufferring
+selected_index: 67
