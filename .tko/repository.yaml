@@ -19,14 +19,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@linear
-- ed@backtrack
 - ed@list
-- ed@map_set
-- ed@rec
-- ed@vector
 - ed@basic
+- ed@vector
+- ed@backtrack
+- ed@rec
+- ed@dfs
+- ed@linear
 - ed@tree
+- ed@map_set
 flags:
   inbox: all
   panel: skills
@@ -34,5 +35,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@inverter
-selected_index: 80
+selected: ed@clonar
+selected_index: 81
