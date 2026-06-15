@@ -19,13 +19,14 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@map_set
 - ed@backtrack
-- ed@vector
-- ed@list
 - ed@basic
 - ed@linear
+- ed@tree
+- ed@map_set
 - ed@rec
+- ed@vector
+- ed@list
 flags:
   inbox: all
   panel: skills
@@ -33,5 +34,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@bufferring
-selected_index: 67
+selected: ed@serial
+selected_index: 78
