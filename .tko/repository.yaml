@@ -20,12 +20,12 @@ sources:
   quests: null
 expanded:
 - ed@linear
-- ed@basic
-- ed@list
-- ed@rec
 - ed@backtrack
-- ed@vector
+- ed@list
 - ed@map_set
+- ed@rec
+- ed@vector
+- ed@basic
 - ed@tree
 flags:
   inbox: all
@@ -34,5 +34,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@formatada
-selected_index: 79
+selected: ed@inverter
+selected_index: 80
